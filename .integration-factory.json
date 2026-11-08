@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "ed869fa4a286c4db9c7b60ef70110bb2f42007a7adfc61946ea34fedea10a18b",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://developers.2chat.co/docs/category/api"
+  ],
+  "id": "2chat-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "2Chat MCP setup and connection checker",
+  "description": "Generate 2Chat MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "2chat",
+  "appName": "2Chat",
+  "providerDocs": "https://developers.2chat.co/docs/category/api",
+  "providerWebsite": "https://2chat.co/",
+  "authentication": {
+    "type": "api_key_header",
+    "requiredCredentialFields": [
+      "api_key"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://developers.2chat.co/docs/API/authentication",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-2chat-mcp",
+  "factory": "leadadapter-pipmcp",
+  "generatorVersion": 1
+}
