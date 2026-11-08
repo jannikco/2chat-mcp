@@ -1,0 +1,8 @@
+# 2Chat MCP setup and connection checker
+
+- [Quick start](README.md)
+- [Capabilities](capabilities.json)
+- [Agent instructions](AGENTS.md)
+- [Task skill](.agents/skills/pipmcp-2chat/SKILL.md)
+
+Actual operations require a scoped PipMCP API key and hosted configuration.

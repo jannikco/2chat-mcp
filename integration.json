@@ -1,37 +1,60 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "ed869fa4a286c4db9c7b60ef70110bb2f42007a7adfc61946ea34fedea10a18b",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://developers.2chat.co/docs/category/api"
-  ],
   "id": "2chat-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "2Chat MCP setup and connection checker",
-  "description": "Generate 2Chat MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare 2Chat for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-2chat-mcp",
+  "sourceRevision": "b572c4fd581e3827a67c9de1742c04ee80aedf2951b7000d745b1bfb5122c168",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://developers.2chat.co/docs/category/api"
+  ],
+  "utility": {
+    "problem": "Prepare 2Chat and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "2chat",
   "appName": "2Chat",
-  "providerDocs": "https://developers.2chat.co/docs/category/api",
-  "providerWebsite": "https://2chat.co/",
-  "authentication": {
-    "type": "api_key_header",
-    "requiredCredentialFields": [
-      "api_key"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://developers.2chat.co/docs/API/authentication",
-    "tenantRequired": false,
-    "accountParameterNames": []
-  },
-  "attributionSlug": "github-2chat-mcp"
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
+  }
 }

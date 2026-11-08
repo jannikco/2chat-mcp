@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-2chat",
+      "description": "Connect AI agents to 2Chat using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-2chat/SKILL.md": "4bdf080ca42ff1f3100dba3b04d9b25bd75dc178d2f3c2e08184fb029d554b16"
+  }
+}
